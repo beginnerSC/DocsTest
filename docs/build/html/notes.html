@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Notes &mdash; DocsTestBeginnerSC 0.1 documentation</title>
+  <title>Import a Project From Github to Readthedocs (RTD) &mdash; DocsTestBeginnerSC 0.1 documentation</title>
   
 
   
@@ -84,7 +84,9 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Notes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Import a Project From Github to Readthedocs (RTD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#nbphinx（參考-sphinx-tutorial-new,-old-&amp;-nbsphix-doc）">nbphinx（參考 sphinx tutorial new, old &amp; nbsphix doc）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#在-RTD-裡-build">在 RTD 裡 build</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#Math-Equation-Test">Math Equation Test</a></li>
 </ul>
 
@@ -132,7 +134,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Notes</li>
+      <li>Import a Project From Github to Readthedocs (RTD)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,11 +177,9 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="Notes">
-<h1>Notes<a class="headerlink" href="#Notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Import-a-Project-From-Github-to-Readthedocs-(RTD)">
+<h1>Import a Project From Github to Readthedocs (RTD)<a class="headerlink" href="#Import-a-Project-From-Github-to-Readthedocs-(RTD)" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Import a project from GitHub to readthedocs (RTD)</p>
-<ul>
 <li><p>如果 RTD 不是以 GitHub 註冊的，要先把 GitHub 加到 Connected Services 裡</p>
 <ul>
 <li><p>RTD Dashbord &gt; Settings &gt; Connected Services</p></li>
@@ -190,9 +190,10 @@
 <li><p>Input a project name（不能和 RTD 目前上線的任何 project 重名）</p></li>
 <li><p>GitHub 端的 webhook 會自動建立，也可以去 RTD 這個 project 裡的 admin &gt; integrations 看</p></li>
 </ul>
-</li>
-<li><p>nbphinx（參考 sphinx tutorial <a class="reference external" href="https://www.youtube.com/watch?v=RvJ54ADcVno">new</a>, <a class="reference external" href="https://www.youtube.com/watch?v=oJsUvBQyHBs&amp;feature=youtu.be">old</a> &amp; <a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.7.1/index.html">nbsphix doc</a>）</p>
-<ul>
+</div>
+<div class="section" id="nbphinx（參考-sphinx-tutorial-new,-old-&amp;-nbsphix-doc）">
+<h1>nbphinx（參考 sphinx tutorial <a class="reference external" href="https://www.youtube.com/watch?v=RvJ54ADcVno">new</a>, <a class="reference external" href="https://www.youtube.com/watch?v=oJsUvBQyHBs&amp;feature=youtu.be">old</a> &amp; <a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.7.1/index.html">nbsphix doc</a>）<a class="headerlink" href="#nbphinx（參考-sphinx-tutorial-new,-old-&-nbsphix-doc）" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
 <li><p>建一個 folder docs</p></li>
 <li><p>進到 docs 裡 <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> 開啟 wizard</p>
 <ul>
@@ -219,14 +220,13 @@
 </li>
 <li><p>內容全部加完後回到 docs 裡重新 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code></p></li>
 </ul>
-</li>
-<li><p>在 RTD 裡 build</p>
-<ul>
-<li><p><a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.3.3/usage.html#Automatic-Creation-of-HTML-and-PDF-output-on-readthedocs.org">在 RTD 環境配置裡安裝 nbsphinx</a>，在這個 repo 裡創建 requirements.txt 加入以下內容： <code class="docutils literal notranslate"><span class="pre">sphinx&gt;=1.4</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">ipykernel</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">nbsphinx</span></code></p></li>
+</div>
+<div class="section" id="在-RTD-裡-build">
+<h1>在 RTD 裡 build<a class="headerlink" href="#在-RTD-裡-build" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.3.3/usage.html#Automatic-Creation-of-HTML-and-PDF-output-on-readthedocs.org">在 RTD 環境配置裡安裝 nbsphinx</a>，在這個 repo 裡創建 requirements.txt 加入以下內容： <code class="docutils literal notranslate"><span class="pre">sphinx&gt;=1.4</span>&#160;&#160;&#160;&#160; <span class="pre">ipykernel</span>&#160;&#160;&#160;&#160; <span class="pre">nbsphinx</span></code></p></li>
 <li><p>在 conf.py 裡加入 <code class="docutils literal notranslate"><span class="pre">master_doc</span> <span class="pre">=</span> <span class="pre">'index'</span></code> 不然會出現 <a class="reference external" href="https://stackoverflow.com/questions/56336234/build-fail-sphinx-error-contents-rst-not-found">contents.rst not found Error</a></p></li>
 <li><p>回到 RTD project 裡 build version</p></li>
-</ul>
-</li>
 </ul>
 </div>
 <div class="section" id="Math-Equation-Test">
