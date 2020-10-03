@@ -60,6 +60,20 @@
 </li>
 <li><p>跑完會出現 docs/source/conf.py，把 <code class="docutils literal notranslate"><span class="pre">'nbsphinx'</span></code> 加到 <code class="docutils literal notranslate"><span class="pre">extensions</span></code> 裡</p></li>
 <li><p>在 docs 裡 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>，生成的 index.html 在 docs/build/html 裡</p></li>
+<li><p>在 docs/source/index.rst 裡的 toctree 很重要不能 delete 不然 sphinx 會沒辦法 make</p></li>
+<li><p>在 docs/source 裡新增 ipynb，在 index.rst 的 toctree 裡紀錄 ipynb 的檔名（不需要副檔名）</p>
+<ul>
+<li><p>每個 ipynb file 一定要有 title</p></li>
+<li><p>toctree 要對齊像這樣： <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">toctree::</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">:maxdepth:</span> <span class="pre">2</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">:caption:</span> <span class="pre">Contents:</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">MYIPYNBFILENAME</span></code></p></li>
+</ul>
+</li>
+<li><p>也可以改 toctree maxdepth</p></li>
+<li><p>內容全部加完後回到 docs 裡 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.3.3/usage.html#Automatic-Creation-of-HTML-and-PDF-output-on-readthedocs.org">在 readthedocs 環境配置裡安裝 nbsphinx</a></p>
+<ul>
+<li><p>在這個 repo 裡創建 requirements.txt 加入以下內容： <code class="docutils literal notranslate"><span class="pre">sphinx&gt;=1.4</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">ipykernel</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">nbsphinx</span></code></p></li>
 </ul>
 </li>
 </ul>

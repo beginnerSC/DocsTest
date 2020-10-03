@@ -9,8 +9,8 @@ Welcome to DocsTestBeginnerSC's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
    notes
-
 
 
 Indices and tables
