@@ -10,6 +10,8 @@ Welcome to DocsTestBeginnerSC's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   notes
+
 
 
 Indices and tables

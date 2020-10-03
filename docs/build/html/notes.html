@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; DocsTestBeginnerSC 0.1 documentation</title>
+    <title>Notes &#8212; DocsTestBeginnerSC 0.1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -14,8 +14,9 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to DocsTestBeginnerSC’s documentation!" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -32,11 +33,36 @@
 
           <div class="body" role="main">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="Notes">
+<h1>Notes<a class="headerlink" href="#Notes" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Import a project from GitHub to readthedocs</p>
+<ul>
+<li><p>如果 readthedocs 不是以 GitHub 註冊的，要先把 GitHub 加到 Connected Services 裡</p>
+<ul>
+<li><p>readthedocs Dashbord &gt; Settings &gt; Connected Services</p></li>
+</ul>
+</li>
+<li><p>readthedocs Dashboard &gt; Import a Project</p></li>
+<li><p>Select a repo</p></li>
+<li><p>Input a project name（不能和 readthedocs 目前上線的任何 project 重名）</p></li>
+<li><p>GitHub 端的 webhook 會自動建立，也可以去 readthedocs 這個 project 裡的 admin &gt; integrations 看</p></li>
+</ul>
+</li>
+<li><p>nbphinx（參考 sphinx tutorial <a class="reference external" href="https://www.youtube.com/watch?v=RvJ54ADcVno">1</a>, <a class="reference external" href="https://www.youtube.com/watch?v=oJsUvBQyHBs&amp;feature=youtu.be">2</a> &amp; <a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.7.1/index.html">nbsphix doc</a>）</p>
+<ul>
+<li><p>建一個 folder docs</p></li>
+<li><p>進到 docs 裡 <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> 開啟 wizard</p>
+<ul>
+<li><p>[] 裡的是預設值</p></li>
+<li><p>release 隨便打，例如 0.1</p></li>
+</ul>
+</li>
+<li><p>跑完會出現 docs/source/conf.py，把 <code class="docutils literal notranslate"><span class="pre">'nbsphinx'</span></code> 加到 <code class="docutils literal notranslate"><span class="pre">extensions</span></code> 裡</p></li>
+<li><p>在 docs 裡 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>，生成的 index.html 在 docs/build/html 裡</p></li>
+</ul>
+</li>
+</ul>
 </div>
 
 
@@ -57,14 +83,15 @@
 
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="notes.html">Notes</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Notes</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to DocsTestBeginnerSC’s documentation!</a></li>
   </ul></li>
 </ul>
 </div>
@@ -97,6 +124,9 @@
       Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
+      |
+      <a href="_sources/notes.ipynb.txt"
+          rel="nofollow">Page source</a>
     </div>
 
     
