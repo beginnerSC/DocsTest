@@ -65,15 +65,17 @@
 <ul>
 <li><p>每個 ipynb file 一定要有 title</p></li>
 <li><p>toctree 要對齊像這樣： <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">toctree::</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">:maxdepth:</span> <span class="pre">2</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">:caption:</span> <span class="pre">Contents:</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">&lt;----</span> <span class="pre">這裡一定要有一個空行</span>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">MYIPYNBFILENAME</span></code></p></li>
+<li><p>參考 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">sphinx doc</a></p></li>
 </ul>
 </li>
 <li><p>也可以改 toctree maxdepth</p></li>
 <li><p>內容全部加完後回到 docs 裡 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code></p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.3.3/usage.html#Automatic-Creation-of-HTML-and-PDF-output-on-readthedocs.org">在 readthedocs 環境配置裡安裝 nbsphinx</a></p>
+<li><p>在 readthedocs 裡 build</p>
 <ul>
-<li><p>在這個 repo 裡創建 requirements.txt 加入以下內容： <code class="docutils literal notranslate"><span class="pre">sphinx&gt;=1.4</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">ipykernel</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">nbsphinx</span></code></p></li>
+<li><p><a class="reference external" href="https://nbsphinx.readthedocs.io/en/0.3.3/usage.html#Automatic-Creation-of-HTML-and-PDF-output-on-readthedocs.org">在 readthedocs 環境配置裡安裝 nbsphinx</a>，在這個 repo 裡創建 requirements.txt 加入以下內容： <code class="docutils literal notranslate"><span class="pre">sphinx&gt;=1.4</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">ipykernel</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">nbsphinx</span></code></p></li>
+<li><p>在 conf.py 裡加入 <code class="docutils literal notranslate"><span class="pre">master_doc</span> <span class="pre">=</span> <span class="pre">'index'</span></code> 不然會出現 <a class="reference external" href="https://stackoverflow.com/questions/56336234/build-fail-sphinx-error-contents-rst-not-found">contents.rst not found Error</a></p></li>
 </ul>
 </li>
 </ul>
