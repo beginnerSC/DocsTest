@@ -13,3 +13,5 @@ pandas
 matplotlib
 pytest
 pytest-cov
+
+six==1.16.0
