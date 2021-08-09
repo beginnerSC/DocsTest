@@ -1,13 +1,21 @@
-.. PyMinimax documentation master file, created by
-   sphinx-quickstart on Mon Aug  2 23:43:27 2021.
+.. DocsTestBeginnerSC documentation master file, created by
+   sphinx-quickstart on Sat Oct  3 04:48:19 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PyMinimax's documentation!
-=====================================
+Welcome to DocsTestBeginnerSC's documentation!
+==============================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
    
-   getting_started
+   notes
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

@@ -1,15 +1,4 @@
-# RTD
-
 sphinx>=1.4
-nbsphinx
 ipykernel
-sphinx-copybutton
+nbsphinx
 
-# Gidpod
-
-numpy
-scipy
-pandas
-matplotlib
-pytest
-pytest-cov
