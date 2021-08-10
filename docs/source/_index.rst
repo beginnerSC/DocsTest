@@ -3,18 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. contents:: In this page
-    :local:
-
-.. beware, that contents directive must appear before any heading hierarchy
-
 
 Welcome to DocsTestBeginnerSC's documentation!
 ==============================================
-
-.. admonition:: Overview
-
-    test
 
 .. toctree::
    :maxdepth: 2
