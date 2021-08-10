@@ -10,6 +10,7 @@ Welcome to DocsTestBeginnerSC's documentation!
    :maxdepth: 2
    :caption: Contents:
    
+   hide_code
    notes
 
 
