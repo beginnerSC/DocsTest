@@ -10,7 +10,7 @@ Welcome to DocsTest's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   empty.ipynb
+   notes.ipynb
 
 Indices and tables
 ==================
